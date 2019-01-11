@@ -5,7 +5,7 @@ describe('exactEarthYears', function() {
     const dateOfBirth = new Date('2000-1-2');
     const currentDate = new Date('2100-1-2');
     const age = exactEarthYears(dateOfBirth,currentDate);
-    expect(99<age && age<101).toEqual(true);
+    expect(100<age && age<100.1).toEqual(true);
   });
 });
 

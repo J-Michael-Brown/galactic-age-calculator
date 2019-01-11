@@ -1,3 +1,5 @@
+Date object parse() and now() methods ignore leap seconds
+
 ## Super Galactic Age Calculator
 
 A solar year lasts 365 days on planet Earth. However, the length of a solar year varies from planet to planet. For instance, a solar year on Mercury lasts 88 days. Write an application that determines a user’s age based on a planet’s solar years. You will need to use the Javascript Date object.
