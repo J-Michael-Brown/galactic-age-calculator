@@ -6,22 +6,22 @@ export function exactEarthYears(dateOfBirth, currentDate) {
   return(exactYears);
 }
 
-export function mercury(exactYears) {
-  const mercuryYears = exactYears/0.24;
+export function mercury(exactEarthYears) {
+  const mercuryYears = exactEarthYears/0.24;
   return mercuryYears;
 }
 
-export function venus(exactYears) {
-  const venusYears = exactYears/0.62;
+export function venus(exactEarthYears) {
+  const venusYears = exactEarthYears/0.62;
   return venusYears;
 }
 
-export function mars(exactYears) {
-  const mercuryYears = exactYears/1.88;
+export function mars(exactEarthYears) {
+  const mercuryYears = exactEarthYears/1.88;
   return mercuryYears;
 }
 
-export function jupiter(exactYears) {
-  const mercuryYears = exactYears/11.86;
+export function jupiter(exactEarthYears) {
+  const mercuryYears = exactEarthYears/11.86;
   return mercuryYears;
 }
