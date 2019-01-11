@@ -12,37 +12,37 @@ describe('CalcUser', function() {
     john = new CalcUser();
   });
 
-  describe('earthDaysLeft', function() {
+  describe('earthYearsLeft', function() {
     it('should determinte how many exact years a user has left to live on earth - based off of country of residence and gender.', function() {
-      const daysLeft = john.earthDaysLeft();
+      const daysLeft = john.earthYearsLeft();
       expect((76-22.5<daysLeft)&&(daysLeft<76-23)).toEqual(true);
     });
   });
 
-  describe('mercuryDaysLeft', function() {
+  describe('mercuryYearsLeft', function() {
     it('should determinte how many exact years a user has left to live on mercury - based off of country of residence and gender.', function() {
-      const daysLeft = john.mercuryDaysLeft(lifeExpectencyChart);
+      const daysLeft = john.mercuryYearsLeft(lifeExpectencyChart);
       expect((((76-22.5)/0.24)<daysLeft)&&(daysLeft<((76-23)/0.24))).toEqual(true);
     });
   });
 
-  describe('venusDaysLeft', function() {
+  describe('venusYearsLeft', function() {
     it('should determinte how many exact years a user has left to live on venus - based off of country of residence and gender.', function() {
-      const daysLeft = john.venusDaysLeft(lifeExpectencyChart);
+      const daysLeft = john.venusYearsLeft(lifeExpectencyChart);
       expect((((76-22.5)/0.62)<daysLeft)&&(daysLeft<((76-23)/0.62))).toEqual(true);
     });
   });
 
-  describe('marsDaysLeft', function() {
+  describe('marsYearsLeft', function() {
     it('should determinte how many exact years a user has left to live on mars - based off of country of residence and gender.', function() {
-      const daysLeft = john.marsDaysLeft(lifeExpectencyChart);
+      const daysLeft = john.marsYearsLeft(lifeExpectencyChart);
       expect((((76-22.5)/1.88)<daysLeft)&&(daysLeft<((76-23)/1.88))).toEqual(true);
     });
   });
 
-  describe('jupiterDaysLeft', function() {
+  describe('jupiterYearsLeft', function() {
     it('should determinte how many exact years a user has left to live on jupiter - based off of country of residence and gender.', function() {
-      const daysLeft = john.jupiterDaysLeft(lifeExpectencyChart);
+      const daysLeft = john.jupiterYearsLeft(lifeExpectencyChart);
       expect((((76-22.5)/11.86)<daysLeft)&&(daysLeft<((76-23)/11.86))).toEqual(true);
     });
   });

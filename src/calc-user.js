@@ -25,26 +25,34 @@ export class CalcUser {
     return false;
   }
 
-  earthDaysLeft() {
+  earthYearsLeft() {
     const givenAge = exactEarthYears(this.birthDate, this.today);
     const expectency = this.lifeExpectency();
     return expectency-givenAge;
   }
 
-  mercuryDaysLeft() {
-
+  mercuryYearsLeft() {
+    const normalYears = this.earthYearsLeft();
+    const mercuryYears = mercury(normalYears);
+    return mercuryYears;
   }
 
-  venusDaysLeft() {
-
+  venusYearsLeft() {
+    const normalYears = this.earthYearsLeft();
+    const venusYears = venus(normalYears);
+    return venusYears;
   }
 
-  marsDaysLeft() {
-
+  marsYearsLeft() {
+    const normalYears = this.earthYearsLeft();
+    const marsYears = mars(normalYears);
+    return marsYears;
   }
 
-  jupiterDaysLeft() {
-
+  jupiterYearsLeft() {
+    const normalYears = this.earthYearsLeft();
+    const jupiterYears = jupiter(normalYears);
+    return jupiterYears;
   }
 
 }
