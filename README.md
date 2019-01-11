@@ -1,4 +1,5 @@
 Date object parse() and now() methods ignore leap seconds
+life expectancy source: https://www.disabled-world.com/calculators-charts/life-expectancy-statistics.php
 
 ## Super Galactic Age Calculator
 
