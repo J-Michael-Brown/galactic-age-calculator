@@ -1,4 +1,4 @@
-import { lifeExpectencyChart } from './life-expectancy.js';
+import { lifeExpectencyChart } from './life-expectency.js';
 import { exactEarthYears, mercury, venus, mars, jupiter } from './../src/interplanetary-age-calculator.js';
 
 export class CalcUser {

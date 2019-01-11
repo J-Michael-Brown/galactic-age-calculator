@@ -9,7 +9,7 @@ describe('CalcUser', function() {
     const gender = 'male';
     const countryOfResidence = 'United States';
 
-    john = new CalcUser();
+    john = new CalcUser(gender, countryOfResidence, dateOfBirth, currentDate);
   });
 
   describe('earthYearsLeft', function() {
