@@ -7,6 +7,7 @@ export class CalcUser {
     this.country = countryOfResidence;
     this.birthDate = dateOfBirth;
     this.today = currentDate;
+    this.age = exactEarthYears(this.birthDate, this.today);
   }
 
   lifeExpectency(lifeExpectencyArray = lifeExpectencyChart) {
