@@ -1,4 +1,4 @@
-import { lifeExpectencyChart } from './life-expectency.js';
+import { lifeExpectencyChart } from './life-expectancy.js';
 import { exactEarthYears, mercury, venus, mars, jupiter } from './../src/interplanetary-age-calculator.js';
 
 export class CalcUser {
@@ -28,8 +28,8 @@ export class CalcUser {
 
   earthYearsLeft() {
     const givenAge = exactEarthYears(this.birthDate, this.today);
-    const expectency = this.lifeExpectency();
-    return expectency-givenAge;
+    const expectancy = this.lifeExpectency();
+    return expectancy-givenAge;
   }
 
   mercuryYearsLeft() {

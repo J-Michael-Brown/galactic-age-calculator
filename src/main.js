@@ -1,5 +1,6 @@
-import { lifeExpectencyChart } from './life-expectency';
+import { lifeExpectencyChart } from './life-expectancy';
 import { CalcUser } from './calc-user';
+import { mercury, venus, mars, jupiter } from './interplanetary-age-calculator.js';
 import './styles.css';
 import $ from 'jquery';
 import 'bootstrap';
@@ -21,20 +22,21 @@ $(document).ready(function() {
     event.preventDefault();
 
     const dateOfBirth = $('#birth-date').val();
-    $('').text("birth: " + dateOfBirth);
     const dateCurrent = $('#current-date').val();
-    $('').text("today: " + dateCurrent);
     const gender = $('#gender option:selected').val();
-    $('').text("gender: " + gender);
     const country = $('#country option:selected').val();
-    $('').text("country name: " + country);
     const user = new CalcUser(gender, country, dateOfBirth, dateCurrent);
 
-    $('').text(user.gender + " " + user.country);
-    $('').text(`Earth years left: ${user.earthYearsLeft()}`);
-    $('').text(`Mercury years left: ${user.mercuryYearsLeft()}`);
-    $('').text(`Venus years left: ${user.venusYearsLeft()}`);
-    $('').text(`Mercury years left: ${user.mercuryYearsLeft()}`);
-    $('').text(`Jupiter years left: ${user.jupiterYearsLeft()}`);
+    $('#earth-expectancy').text(user.earthYearsLeft());
+    $('#mercury-expectancy').text(user.mercuryYearsLeft());
+    $('#venus-expectancy').text(user.venusYearsLeft());
+    $('#mars-expectancy').text(user.mercuryYearsLeft());
+    $('#jupiter-expectancy').text(user.jupiterYearsLeft());
+
+    $('#earth-age').text(user.age);
+    $('#mercury-age').text(mercury(user.age));
+    $('#venus-age').text(venus(user.age));
+    $('#mars-age').text(mars(user.age));
+    $('#jupiter-age').text(jupiter(user.age));
   });
 });
